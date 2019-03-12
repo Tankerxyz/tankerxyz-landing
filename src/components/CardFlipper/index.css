@@ -1,0 +1,80 @@
+.card-container {
+  position: relative;
+  width: 50vw;
+  height: 50vh;
+  min-width: 300px;
+  min-height: 300px;
+  max-width: 1000px;
+  max-height: 1000px;
+}
+
+.card {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+  will-change: transform, opacity;
+  padding: 1em;
+  box-sizing: border-box;
+  background: grey;
+  box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
+  border: 15px solid white;
+  transition: box-shadow 0.5s;
+}
+
+.card:hover {
+  box-shadow: 0px 30px 100px -10px rgba(0, 0, 0, 0.4);
+}
+
+.front,
+.back {
+  background-size: cover;
+}
+
+.back {
+  background-image: url(https://www.w3schools.com/w3css/img_lights.jpg);
+}
+
+.front {
+  background-image: url(http://spaceengine.org/media/2016/05/scr00009.jpg);
+}
+
+.user-container {
+  display: flex;
+  min-height: 200px;
+  align-items: center;
+}
+
+.avatar {
+  min-height: 150px;
+  min-width: 150px;
+  border: 1px solid rgba(0, 0, 0, 0.9);
+  border-radius: 50%;
+  margin-right: 1em;
+  background: url(https://instagram.fiev13-1.fna.fbcdn.net/vp/b4b592d978531c4efb835d6a2bfc8c0e/5D0F9102/t51.2885-19/s150x150/51910985_347651305843535_2666973484483084288_n.jpg?_nc_ht=instagram.fiev13-1.fna.fbcdn.net);
+  background-size: contain;
+  box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.9) inset;
+}
+
+.user-info {
+  font-size: 2em;
+  color: whitesmoke;
+  text-shadow:
+      1px 1px 1px rgba(0, 0, 0, 0.8),
+      2px 2px 1px rgba(0, 0, 0, 0.6),
+      3px 3px 1px rgba(0, 0, 0, 0.4),
+      3px 3px 1px rgba(0, 0, 0, 0.2);
+  text-align: left;
+}
+
+.user-address {
+  font-size: 0.3em;
+  width: 100px;
+}
+
+@media (max-width: 768px) {
+  .user-container {
+    flex-direction: column;
+  }
+}
