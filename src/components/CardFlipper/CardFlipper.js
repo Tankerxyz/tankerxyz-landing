@@ -36,7 +36,7 @@ export default function CardFlipper() {
         class="card back" style={{ opacity: opacity.interpolate(o => 1 - o), transform }} >
         <Card />
       </animated.div>
-      <animated.div class="card front" style={{ opacity, transform: transform.interpolate(t => `${t} rotateX(180deg)`) }} >
+      <animated.div class="card front" style={{ opacity: opacity.interpolate(o => o <= 0.5 ? 0 : o), transform: transform.interpolate(t => `${t} rotateX(180deg)`) }} >
         <Card />
       </animated.div>
     </div>
