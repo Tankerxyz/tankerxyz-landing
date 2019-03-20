@@ -33,11 +33,11 @@
 }
 
 .back {
-  background-image: url(https://www.w3schools.com/w3css/img_lights.jpg);
+  background-image: url('../../assets/img/back.jpg');
 }
 
 .front {
-  background-image: url(http://spaceengine.org/media/2016/05/scr00009.jpg);
+  background-image: url('../../assets/img/front.jpg');
 }
 
 .user-container {
@@ -52,7 +52,7 @@
   border: 1px solid rgba(0, 0, 0, 0.9);
   border-radius: 50%;
   margin-right: 1em;
-  background: url(https://instagram.fiev13-1.fna.fbcdn.net/vp/b4b592d978531c4efb835d6a2bfc8c0e/5D0F9102/t51.2885-19/s150x150/51910985_347651305843535_2666973484483084288_n.jpg?_nc_ht=instagram.fiev13-1.fna.fbcdn.net);
+  background: url('../../assets/img/tankerxyz_face.jpg');
   background-size: contain;
   box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.9) inset;
 }
