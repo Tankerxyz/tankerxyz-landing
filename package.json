@@ -1,6 +1,6 @@
 {
   "name": "tankerxyz-landing",
-  "version": "0.1.0",
+  "version": "0.0.0",
   "private": true,
   "dependencies": {
     "react": "^16.8.4",
@@ -12,7 +12,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "version": "standard-version"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -25,7 +26,8 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "cz-conventional-changelog": "^2.1.0"
+    "cz-conventional-changelog": "^2.1.0",
+    "standard-version": "^5.0.2"
   },
   "config": {
     "commitizen": {
